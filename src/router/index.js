@@ -9,7 +9,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: '/profile/:user',
+        name: 'Profile',
+        component: Profile
+      }
+    ]
   },
   {
     path: '/about',
@@ -24,11 +31,11 @@ const routes = [
     name: 'Contact',
     component: () => import('../views/Contact.vue')
   },
-  {
+  /*{
     path: '/profile/:user',
     name: 'Profile',
     component: Profile
-  },
+  },*/
 ]
 
 const router = new VueRouter({

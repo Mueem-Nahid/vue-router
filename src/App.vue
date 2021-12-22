@@ -6,7 +6,6 @@
       <router-link to="/contact">Contact</router-link>
       <!-- <router-link to="/profile">Profile</router-link> -->
     </div>
-    <router-view/>
   </div>
 </template>
 
